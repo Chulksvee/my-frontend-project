@@ -1,0 +1,57 @@
+body{
+
+        background-image: url(/images/Silver\ Wavy\ Lines\ On\ White\ Background.jpg);
+        background-attachment: fixed;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%; 
+        cursor: zoom-in;
+    
+}
+
+.container{
+    text-align: center;
+    
+}
+
+.info{
+    color: red;
+    font-size:20px ;
+}
+
+.vee{
+    background-color: rgb(0, 20, 0);
+    color: white;
+    padding: 0px 15px;
+    border-radius: 30px;
+}
+
+.footer-container{
+    background-color:  rgba(103, 0, 172, 0.812);
+    height: 80vh;
+}
+                
+.facebook{
+    padding-top: 10px;
+    color: white;
+}
+
+.header{
+    font-size: 30px;
+}
+
+img{
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+

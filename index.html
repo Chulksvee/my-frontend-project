@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World-Class Travel & Tours</title>
+    <link rel="stylesheet" href="/landingpage.css">
+</head>
+<body class="landingpage">
+
+    <div class="time" style="margin-top: 20px; font-size: 30px;">
+
+        <div class="time">
+            <span id="hrs" >00</span>
+            <span>:</span> 
+            <span id="mins" >00</span>
+            <span>:</span>
+            <span id="sec" >00</span>
+        </div>
+    
+    
+    </div>
+
+<div class="mywebsite">
+    <h1 style="width: 50%; display: flex; justify-content: center; margin-left: 375px; ">Welcome to PalmPay</h1>
+
+    <p style="color: yellow;"><span style="color: red; font-weight: bold;">NOTE:</span> This is a simple Palmpay website Modification!</p>
+
+</div>
+
+<!-- here is my button -->
+
+<div class="button" style="margin-top: 70px;">
+    <a  href="/palmpay.html" class="p1"><span>Click Here to Open Website</span></a>
+</div>
+
+
+
+
+<script>
+
+    //adding the current time to the date
+    var hrs = document.getElementById('hrs');
+    var mins = document.getElementById('mins');
+    var sec = document.getElementById('sec');
+    // var timeFormat = '24'; // Default to 24-hour format
+
+setInterval(() => {
+
+    let currentTime = new Date();
+    // let currentTime = new Date;
+
+    hrs.innerHTML = (currentTime.getHours()<10?"0"+ currentTime.getHours() : currentTime.getHours())
+    mins.innerHTML = (currentTime.getMinutes()<10?"0"+ currentTime.getMinutes() : currentTime.getMinutes())
+    sec.innerHTML = (currentTime.getSeconds()<10?"0"+ currentTime.getSeconds() : currentTime.getSeconds())
+
+    // hrs.innerHTML = (currentTime.getHours() < 10 ? "0" + currentTime.getHours() : currentTime.getHours());
+    // mins.innerHTML = (currentTime.getMinutes() < 10 ? "0" + currentTime.getMinutes() : currentTime.getMinutes());
+    // sec.innerHTML = (currentTime.getSeconds() < 10 ? "0" + currentTime.getSeconds() : currentTime.getSeconds());
+}, 1000);
+
+</script>
+</body>
+</html>

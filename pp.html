@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Clock</title>
+    <style>
+        /* CSS styling for the clock */
+        #clock {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            margin: 50px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock"></div>
+
+    <script>
+        var clock = document.getElementById('clock');
+        var alarmTime = null;
+
+        // Function to update the clock
+        function updateClock() {
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+            var timeFormat = '24'; // Default to 24-hour format
+
+            // Check if the user has selected 12-hour format
+            if (document.getElementById('format12').checked) {
+                hours = (hours % 12) || 12; // Convert to 12-hour format
+                timeFormat = '12';
+            }
+
+            // Display leading zeros if needed
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            // Display the time
+            clock.innerHTML = hours + ':' + minutes + ':' + seconds + ' (' + timeFormat + '-hour format)';
+
+            // Check if it's time for the alarm
+            if (alarmTime && alarmTime.getHours() === hours && alarmTime.getMinutes() === minutes) {
+                alert('Alarm! It\'s ' + hours + ':' + minutes + '!');
+                alarmTime = null; // Reset the alarm time
+            }
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Function to set the alarm time
+        function setAlarm() {
+            var alarmHour = parseInt(document.getElementById('alarmHour').value);
+            var alarmMinute = parseInt(document.getElementById('alarmMinute').value);
+
+            if (isNaN(alarmHour) || isNaN(alarmMinute) || alarmHour < 0 || alarmHour > 23 || alarmMinute < 0 || alarmMinute > 59) {
+                alert('Please enter valid hour and minute values (0-23 for hours, 0-59 for minutes).');
+                return;
+            }
+
+            alarmTime = new Date();
+            alarmTime.setHours(alarmHour);
+            alarmTime.setMinutes(alarmMinute);
+            alarmTime.setSeconds(0);
+
+            alert('Alarm is set for ' + alarmHour + ':' + alarmMinute + '!');
+        }
+    </script>
+
+    <div>
+        <input type="radio" id="format24" name="timeFormat" value="24" checked>
+        <label for="format24">24-Hour Format</label>
+        <input type="radio" id="format12" name="timeFormat" value="12">
+        <label for="format12">12-Hour Format</label>
+    </div>
+
+    <div>
+        <label for="alarmHour">Set Alarm Hour:</label>
+        <input type="number" id="alarmHour" min="0" max="23">
+        <label for="alarmMinute">Set Alarm Minute:</label>
+        <input type="number" id="alarmMinute" min="0" max="59">
+        <button onclick="setAlarm()">Set Alarm</button>
+    </div>
+</body>
+</html>
+```
+

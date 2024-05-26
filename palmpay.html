@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PALMPAY/Finance That Fit Your Life</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/aef0090527.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/palmpay.css">
+    <link rel="shortcut icon" href="/images/OIP.jpeg" type="#">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   
+  <!-- <div>
+    <input type="radio" id="format24" name="timeFormat" value="24" checked>
+    <label for="format24">24-Hour Format</label>
+    <input type="radio" id="format12" name="timeFormat" value="12">
+    <label for="format12">12-Hour Format</label>
+</div> -->
+
+
+
+<!-- my navigation-bar starts here -->
+<div class="container mt-3">
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light mt-2 rounded ">
+    <div class="container-fluid">
+        <img src="/images/logo.e481427a.png" alt="logo" style="width:120px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/openaccount.html">Open Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/partners.html">Global Partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/interestcal.html">Investment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="https://www.palmpay.com/personal/buyAndShop">Commercial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/chulks.html">About Us</a>
+          </li>
+          <label class="english" for="select languages"></label> 
+          <select name="select language" id="language"> 
+              <option value="english">English</option> 
+              <option value="Igbo">Igbo</option> 
+              <option value="French">French</option> 
+              <option value="Hausa">Hausa</option> 
+          </select>
+          
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+     
+      </div>
+      
+
+  <!-- here is the digital clock -->
+        <div class="time">
+            <span id="hrs" >00</span>
+            <span>:</span> 
+            <span id="mins" >00</span>
+            <span>:</span>
+            <span id="sec" >00</span>
+        </div>
+
+    
+    </div>
+  </nav>
+
+</div>
+
+</div
+
+
+<div class="but">
+        
+  <button class="color" style=" margin-top: 20px; background-color: #7713aa; color: white;font-weight: bold; border-radius: 50%; padding: 5px;" type="button" onclick="changecolors()">Change Bg Color</button>
+
+</div>
+
+
+<!-- here is my header starter  -->
+
+    <div class="header-text text-center mt-4">
+
+        <p style="color: #7713aa; font-weight: bold;">Finance That Fits Your Life</p>
+
+    </div>
+
+    <div class="body-text text-center ">
+
+        <p>Seamlessly send and receive money, effortlessly pay your bills, shop anywhere with ease,
+            and take full control of your finances-all in Palmpay
+        </p>
+
+    </div>
+
+<!-- here is my botton design -->
+
+<div class="button text-center mt-4">
+
+   <a href="https://play.google.com/store/apps"><button type="button" class="btn btn-dark btn-sm px-4 rounded-pill"><i class="fa-brands fa-google-play fa-shake" style="color: #d50606;"></i>Get in on <br> <span>Google Play</span></button></a> 
+    <a href="https://www.apple.com/app-store/"><button type="button"  class="btn btn-dark btn-sm px-4 rounded-pill"><i class="fa-brands fa-apple fa-shake" style="color: #cd1313;"></i>Download on <br> <span>App Store</span></button></a>
+
+</div>
+
+    <div class="button-text text-center mt-4">
+        <p>Licenced by CBN as a MMO  Deposits Insured by | <span style="color: rgb(0, 0, 107); font-weight: bold;">NDIC</span></p>
+    </div>
+
+    <!-- here is my bank image -->
+
+    <div style="margin-top: 20px; position: relative; left: 210px; border-radius: 20px;" class="imggg">
+
+    <div class="image text-center">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <!-- <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div> -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="width: 75%!important;" src="/images/CBN.webp"  class="d-block w-100"  alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img style="width: 70%!important;"  src="/images/3059655.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img  style="width: 70%!important;" src="/images/bank-bank-building-branch_vyks9ofi_thumbnail-1080_01.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
+          </div>
+
+
+        <!-- <img src="/images/CBN.webp" alt="bank" style="width: 40%; border-radius: 100%; margin-top: 20px ;"> -->
+
+    </div>
+
+</div>
+
+<!-- here is my image -->
+
+    <div class="img text-center">
+
+        <img class="chulks" src="/images/makeFinancial.16856f8a.png" alt="image">
+
+    </div>
+
+</div>
+
+
+<!-- Here is my main body -->
+
+    <div class="container-fluid text-center  text-white mt-3" style="background: fixed; background-color: #7713aa; height: 205vh;">
+
+        <div class="ST-1" style="padding-top: 280px;">
+
+            <div class="text-1 pt-5">
+
+                <div class="card-body">
+                    <h6 class="card-title">Do more with your money</h6>
+
+                    <p>More than just transferring money. You can do all cool stuff-pay your bills, make purchase,
+                        save and earn, all financial needs in one PalmPay app. </p>
+
+                  </div>
+             
+            </div>
+
+        <div class="img-1">
+
+            <img class="chulks-1" src="/images/payBills.0efc6845.png" alt="image">
+
+        </div>
+    </div>
+
+
+    <div class="ST-2" style="padding-top: 15px;">
+
+        <div class="text-2 pt-5">
+
+            <div class="card-body">
+                    <h6 class="card-title">Earn as you spend with rewards</h6>
+                <p>With PalmPay, every expence becomes anoppotunity to save. Unlock exclusive discounts and
+                    transactions you make. Embrace cashless payment and make every payment count with PalmPay.
+                </p>
+
+              </div>
+               
+        </div>
+
+        <div class="img-1">
+
+            <img class="chulks-1" src="/images/coupons.b7c11783.png" alt="image">
+
+        </div>
+    </div>
+
+</div>
+
+<!-- here begings my card flex -->
+
+
+    <div class="card mb-3 container mt-5" style="max-width: 80%;">
+        <div class="row g-0">
+        <div class="col-md-4">
+            <img src="/images/NDIC.80dcf580.png" class="img-fluid rounded-start" alt="#">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+            <h5 class="card-title mt-5">Your privacy and security is our top priority</h5>
+            <p class="card-text">Palmpay is fully licensed as a Mobile Money Operator by CBN, and insured by NDIC.
+                We manage customer's funds in compliance with all application regulations. This means that our
+                    more than 30 million users and millions of businesses are protected. </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+  <div class="card mb-3 container " style="max-width: 80%;">
+    <div class="row g-0">
+      <div class="col-md-8" >
+        <div class="card-body">
+          <h5 class="card-title mt-5">We are happy to help</h5>
+          <p class="card-text">Browse topics, find resources, or chat with customer service. PalmPay support
+                has answers to all your questions. Have an inquiry, or need customer service assistance? </p>
+          <p class="card-text"><small class="text-body-secondary">Call us: +234 018886888 <br>
+                            Email: vitalisofo@gmail.com</small></p>
+                <a href="mailto:vitalisofo@gmail.com"><button style="border-radius: 10px; background-color:  rgb(103, 0, 172); color: white;
+                    padding: 5px 15px; border: none; font-weight: bold;">Email Us</button></a>
+        </div>
+      </div>
+      <div class="col-md-4" style="max-width:100%;">
+        <img src="/images/HelpCenter.7adf53ab.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- here is my footer design -->
+
+<div class="footer1-container">
+    <div class="dt" style="display: flex; align-items: center;">
+        
+            <h1>Join30+ millionusers who love PalmPay<h1>
+
+                <div class="button text-center mt-4">
+
+                    <button type="button" class="btn btn-dark btn-sm px-4 rounded-pill"><i class="fa-brands fa-google-play fa-shake" style="color: #d50606;"></i>Get in on <br> <span>Google Play</span></button>
+                    <button type="button"  class="btn btn-dark btn-sm px-4 rounded-pill"><i class="fa-brands fa-apple fa-shake" style="color: #cd1313;"></i>Download on <br> <span>App Store</span></button>
+                
+                </div>
+    </div>
+
+
+<div class="container-fluid">
+
+<div class="footer2-con">
+
+    <div class="Dropbox">
+
+        
+        <h3>Palmpay</h3>
+       
+            <ul>
+<div class="align">
+            <li><img style="width: 150px; " src="/images/centralBank.e14647d7.png" alt="#"></li>
+            <li><img style="width: 150px; padding-top: 10px;" src="/images/NDIC.2b6dc455.png" alt="#"></li>
+            <li><img style="width: 150px; padding-top: 10px;" src="/images/NDIC.2b6dc455.png" alt="#"></li>
+            <li><img style="width: 150px; padding-top: 10px;" src="/images/NDPC.5e0c1fc1.png" alt="#"></li>
+</div> 
+        </div>
+
+            <div class="product">
+
+        <h3>Personal</h3>
+        <ul>
+            
+                    <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Palmpay App</a></li>
+                    <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Send & Receive Money</a></li>
+                    <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Bill Payment</a></li>
+                    <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Buy & Shop</a></li>
+                </ul>
+            </div>
+
+            
+                <div class="suport">
+                <h3>Business</h3>
+                <ul>
+                        <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">About</a></li>
+                        <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Blog</a></li>
+                        <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Press & Media</a></li>
+                        <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="community">
+                <h3>Company</h3>
+                <ul>
+                    <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Blog</a></li>
+                    <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Developers</a></li>
+                    <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Community forums</a></li>
+                    <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Referrals</a></li>
+                    <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Reseller partners</a></li>
+                    <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Integration partners</a></li>
+                </ul>    
+            </div>
+
+            
+           <div class="company">
+            <h3>Legal</h3>
+            <ul>
+                <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Privacy Policy</a></li>
+                <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Terms & Conditions</a></li>
+                <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Complaints</a></li>
+            </ul>
+        </div>
+
+        
+      
+</div>
+   
+
+<div class="socials">
+    
+    <a href="https://www.facebook.com/profile.php?id=61553722241541"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://github.com/Chulksvee"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.youtube.com/@VitalisOfoegbu-um1mh"><i class="fa-brands fa-youtube"></i></a>
+</div>
+
+<div class="english">
+    <p><i class="fa-solid fa-globe"></i>2023 PalmPay. All rights reserved.</p>
+</div>
+
+
+    <hr style="color: white;">
+
+        <div class="paragrah px-5">
+
+            <p>PalmPay is a financial service provided by PalmPay Limited, licensed and regulated by the Central Bank of Nigeria (CBN). 
+                Deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC). We empower individuals and businesses with payments solutions,
+                 high-yield investment opportunities, and easy-to-use tools for financial management.
+                We are a global company with a presence in Nigeria, Ghana, Tanzania, and the United Kingdom.</p>
+
+        </div>
+
+</div>
+
+</div>
+
+<script src="/palmpay.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
